@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "boot.dev sunrise",
+  "version": "1.0",
+
+  "description": "Adds light mode to boot.dev",
+
+  //"icons": {
+  //  "48": "icons/sunrise-48.png"
+  //},
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.boot.dev/*"],
+      "js": ["sunrise.js"]
+    }
+  ]
+}
